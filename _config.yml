@@ -1,0 +1,67 @@
+# Site settings
+title: Dale Rogers
+email: hello@dalerogers.com.au
+description: >-
+  Dale Rogers is a skilled service designer with expertise in creating innovative
+  and user-centered solutions. Explore his portfolio to see how he transforms
+  services and experiences through design thinking and strategic planning.
+baseurl: ""
+url: "https://dalerogers.com.au"
+github_username: duds
+
+# Author settings
+author:
+  name: Dale Rogers
+  bio: Service Designer | Transforming Services Through Innovation
+  photo: /assets/images/dale-rogers.jpg
+  social:
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/dalerogers
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-feed
+
+# Header pages
+header_pages:
+  - portfolio.md
+  - articles.md
+  - contact.md
+
+# Portfolio settings
+portfolio:
+  title: Portfolio
+  description: Explore my service design case studies.
+  case_studies:
+    - title: Case Study 1
+      description: A brief description of case study 1.
+      image: /assets/images/case-study1.jpg
+      url: /portfolio/case-study1
+    - title: Case Study 2
+      description: A brief description of case study 2.
+      image: /assets/images/case-study2.jpg
+      url: /portfolio/case-study2
+    - title: Case Study 3
+      description: A brief description of case study 3.
+      image: /assets/images/case-study3.jpg
+      url: /portfolio/case-study3
+
+# Articles settings
+articles:
+  title: Articles
+  description: Read my latest articles and insights on service design.
+  posts_per_page: 5
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

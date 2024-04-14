@@ -1,0 +1,10 @@
+<header>
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+      <ul>
+        {% for item in site.header_pages %}
+        <li><a href="{{ item | relative_url }}">{{ item | remove: '.md' | capitalize }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
