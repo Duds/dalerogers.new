@@ -1,0 +1,38 @@
+<section class="section articles">
+    <div class="container carousel my-carousel test" data-current-slide="1">
+      <h2 class="title">{{ site.stories.title }}</h2>
+      <p class="subtitle">{{ site.stories.description }}</p>
+      <div class="carousel__track">
+        {% assign sorted_posts = site.categories.story | sort: 'date' | reverse %}
+        {% for post in sorted_posts limit: 3 %}
+        <div class="carousel__slide">
+          <div class="card">
+            <a href="{{ post.url | relative_url }}">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">{{ post.title }}</p>
+                    <p class="subtitle is-6">{{ post.date | date: "%B %d, %Y" }}</p>
+                  </div>
+                </div>
+                <div class="content">
+                  {{ post.excerpt }}
+                  <a href="{{ post.url | relative_url }}" class="button is-link">Read More</a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="controls">
+        <label for="" class="carousel__control carousel__control--backward">‹</label>
+        <label for="" class="carousel__control carousel__control--forward">›</label>
+      </div>
+    </div>
+  </section>

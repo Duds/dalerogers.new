@@ -1,1 +1,39 @@
-# footer
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+        <div class="columns">
+          <div class="column is-8">
+            <h1 class="title is-4">We're available</h1>
+            <p>
+              Are you looking for a skilled service designer to enhance your business? Let's connect and discuss how we can collaborate to create exceptional user experiences and drive success for your company. Feel free to reach out to us via email or social media. We're excited to learn more about your project and explore how we can contribute our expertise to achieve your goals.
+            </p>
+          </div>
+          <div class="column is-4"></div>
+        </div>
+      </div>
+      <div class="column is-2">
+        <h2 class="title is-5">Navigation</h2>
+        <ul>
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="column is-2">
+        <h2 class="title is-5">Connect</h2>
+        <ul>
+          {% for social in site.social %}
+          <li><a href="{{ social.url }}" target="_blank">{{ social.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="column is-2">
+        <h2 class="title is-5">Get in touch</h2>
+        <p>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

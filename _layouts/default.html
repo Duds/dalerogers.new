@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-</head>
+  {% include head.html %}
 <body>
-  {% include header.html %}
-
-  <main>
-    {{ content }}
-  </main>
-
-  {% include footer.html %}
+  <div class="container is-fluid">
+    {% include header.html %}
+    <main class="section">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
 </body>
 </html>

@@ -1,10 +1,27 @@
 <header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-      <ul>
-        {% for item in site.header_pages %}
-        <li><a href="{{ item | relative_url }}">{{ item | remove: '.md' | capitalize }}</a></li>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/dale_rogers_logo.svg' | relative_url }}" alt="{{ site.title }} Logo" height="28px" width="28px">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        {% for item in site.navigation %}
+          {% if item.title != 'Home' %}
+            <a class="navbar-item" href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         {% endfor %}
-      </ul>
-    </nav>
-  </header>
+      </div>
+    </div>
+  </nav>
+</header>

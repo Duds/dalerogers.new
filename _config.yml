@@ -2,9 +2,8 @@
 title: Dale Rogers
 email: hello@dalerogers.com.au
 description: >-
-  Dale Rogers is a skilled service designer with expertise in creating innovative
-  and user-centered solutions. Explore his portfolio to see how he transforms
-  services and experiences through design thinking and strategic planning.
+  Dale Rogers is a skilled service designer with expertise in creating innovative and user-centered solutions.
+  Explore his portfolio to see how he transforms services and experiences through design thinking and strategic planning.
 baseurl: ""
 url: "https://dalerogers.com.au"
 github_username: duds
@@ -14,44 +13,54 @@ author:
   name: Dale Rogers
   bio: Service Designer | Transforming Services Through Innovation
   photo: /assets/images/dale-rogers.jpg
-  social:
-    - title: LinkedIn
-      url: https://www.linkedin.com/in/dalerogers
+
+# Social settings
+social:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/dalerogers
+  - title: Medium
+    url: https://dale-rogers.medium.com/
+  - title: GitHub
+    url: https://github.com/duds
 
 # Build settings
 theme: null
 plugins:
   - jekyll-feed
+  - jekyll-assets
 
-# Header pages
-header_pages:
-  - portfolio.md
-  - articles.md
-  - contact.md
+# Navigation settings
+navigation:
+  - title: Home
+    url: /
+  - title: Work
+    url: /work/
+  - title: Stories
+    url: /stories/
+  - title: Contact
+    url: /contact/
 
-# Portfolio settings
-portfolio:
-  title: Portfolio
+# Work settings
+work:
+  title: Work
   description: Explore my service design case studies.
-  case_studies:
-    - title: Case Study 1
-      description: A brief description of case study 1.
-      image: /assets/images/case-study1.jpg
-      url: /portfolio/case-study1
-    - title: Case Study 2
-      description: A brief description of case study 2.
-      image: /assets/images/case-study2.jpg
-      url: /portfolio/case-study2
-    - title: Case Study 3
-      description: A brief description of case study 3.
-      image: /assets/images/case-study3.jpg
-      url: /portfolio/case-study3
-
-# Articles settings
-articles:
-  title: Articles
-  description: Read my latest articles and insights on service design.
   posts_per_page: 5
+
+# Stories settings
+stories:
+  title: Stories
+  description: Read my latest stories and insights on service design.
+  posts_per_page: 5
+
+# Plugins settings
+plugins:
+  - jekyll-assets
+
+# Assets settings
+assets:
+  sources:
+    - assets/js
+    - assets/css
 
 # Exclude from processing
 exclude:

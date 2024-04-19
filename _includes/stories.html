@@ -1,0 +1,35 @@
+<section class="section stories">
+  <div class="container">
+    <h2 class="title">{{ site.stories.title }}</h2>
+    <p class="subtitle">{{ site.stories.description }}</p>
+
+    <div class="columns is-multiline">
+        {% assign sorted_posts = site.categories.story | sort: 'date' | reverse %}
+        {% for post in sorted_posts limit: 3 %} 
+            <div class="column is-one-third">
+              <div class="card">
+                <a href="{{ post.url | relative_url }}">
+                  <div class="card-image is-4by3">
+                    <figure class="image"> 
+                      <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media"> 
+                      <div class="media-content">
+                        <p class="title is-4">{{ post.title }}</p>
+                        <p class="subtitle is-6">{{ post.date | date: "%B %d, %Y" }}</p> 
+                      </div>
+                    </div>
+                    <div class="content">
+                      {{ post.excerpt }}
+                      <a href="{{ post.url | relative_url }}" class="button is-link">Read More</a> 
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>

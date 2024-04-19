@@ -7,8 +7,10 @@ title: Home
 
 {% include expertise.html %}
 
-{% include about_me.html %}
+{% include my_work.html %}
 
-{% include articles.html %}
+{% include stories.html %}
 
-{% include case_studies.html %}
+{% include work.html %}
+
+{% include test.html %}
