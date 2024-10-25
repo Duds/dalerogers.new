@@ -12,5 +12,3 @@ title: Home
 {% include stories.html %}
 
 {% include work.html %}
-
-{% include test.html %}

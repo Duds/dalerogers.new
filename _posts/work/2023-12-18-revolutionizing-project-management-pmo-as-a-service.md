@@ -6,6 +6,7 @@ date: 2023-12-18
 category: work
 tags: [PMO, Service Design, Agile, Mining]
 excerpt: This case study explores the development and implementation of a bespoke Project Management Office (PMO) service for a resources company, showcasing how a speculative service design can revolutionize project management and contribute to operational excellence.
+thumbnail: /assets/images/stories/230423.jpeg
 ---
 
 ![PMO as a Service Header Image](images/pmo-as-a-service-header.jpg)
