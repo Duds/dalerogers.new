@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: work
 title: Revolutionizing Project Management - A Winning Blueprint for Delivering PMO as a Service to a Resources Company
 author: Dale Rogers
 date: 2023-12-18

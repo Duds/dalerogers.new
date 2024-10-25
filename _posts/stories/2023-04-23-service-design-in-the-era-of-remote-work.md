@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: stories
 title: "Service Design in the Era of Remote Work: Adapting to New Ways of Collaboration"
 author: Dale Rogers
 date: 2023-04-23
